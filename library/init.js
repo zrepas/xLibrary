@@ -1,10 +1,11 @@
 require.config({
 	urlArgs: "bust=" + (new Date()).getTime(), // prevent Cache of everything...
-	baseUrl: "http://repaszoltan.hu/library/",
+	baseUrl: "library/",
 	shim: {
 		handlebars: 	{deps: ['jquery']},
 		bootstrap: 		{deps: ['jquery']},
 		bootbox: 		{deps: ['jquery', 'bootstrap']},
+		touchspin: 		{deps: ['jquery', 'bootstrap']},
 		notify: 		{deps: ['jquery', 'bootstrap']},
 		grid:			{deps: ['jquery', 'bootstrap']},
 		datepicker:		{deps: ['jquery', 'bootstrap']},
@@ -13,6 +14,7 @@ require.config({
 		text:			'text/text',
 		grid:			'grid/grid',
 		hbs:			'hbs/hbs',
+		touchspin:		'touchspin/touchspin.min',
 		notify:			'notify/notify.min',
 		datepicker:		'datepicker/datepicker.min',
 		bootbox:		'bootbox/bootbox.min',
@@ -200,6 +202,15 @@ require(['jquery', 'bootstrap'], function($, bs) {
 				});
 			});
 		});
+	});
+	
+	$("input.touchspin").click(function(){
+		var that = $(this);
+		require(['touchspin'], function(touchspin) {
+			require(['css!./touchspin'], function() {});
+			that.TouchSpin();
+			that.trigger("click");
+		})
 	});
 
 
