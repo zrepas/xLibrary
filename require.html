@@ -202,9 +202,73 @@
 					</div>
 
 					<h3>Numberpicker</h3>
-					<input id="demo_vertical" type="text" value="" class="touchspin form-control" name="demo_vertical">
-					
+					<p>Module: <code>touchspin</code></p>
+					<p>Require: <code>jquery, bootstrap</code></p>
+					<p>Szám input</p>
+					<div class="example">
+						<div class="row">
+							<div class="col-sm-2">
+								<label>Simple</label>
+								<input type="text" value="" placeholder="Ide írj." class="touchspin form-control">
+							</div>
+							<div class="col-sm-2">
+								<label>Autoinit</label>
+								<input type="text" value="12" class="touchspin autoinit form-control">
+							</div>
+							<div class="col-sm-2">
+								<label>Autoinit vertical</label>
+								<input type="text" value="" class="touchspin autoinit form-control" data-vertical="true">
+							</div>
+							<div class="col-sm-3">
+								<label>Min, max</label>
+								<input type="text" value="" class="touchspin form-control" data-min="10" data-max="20">
+							</div>
+							<div class="col-sm-3">
+								<label>Step, decimals</label>
+								<input type="text" value="" class="touchspin form-control" data-min="10" data-max="20" data-step="0.1" data-decimals="2">
+							</div>
+							<div class="col-sm-4">
+								<label>Postfix</label>
+								<input type="text" value="" class="touchspin form-control" data-postfix="%">
+							</div>
+							<div class="col-sm-8">
+								<label>Pre-, postfix, Autoinit</label>
+								<input type="text" value="" class="touchspin autoinit form-control" data-postfix="forint" data-prefix="legalább">
+							</div>
+						</div>
+					</div>
+					<script src="https://gist.github.com/zrepas/1347d6142b0754540545.js"></script>
+
 					<h3>Colorpicker</h3>
+					<p>Module: <code>colorpicker</code></p>
+					<p>Require: <code>jquery, bootstrap</code></p>
+					<p>Colorpicker</p>
+					<div class="example">
+						<div class="row">
+							<div class="col-sm-2">
+								<label>Simple</label>
+								<input type="text" value="" class="colorpicker form-control">
+							</div>
+							<div class="col-sm-2">
+								<label>Autoinit</label>
+								<input type="text" value="" class="colorpicker autoinit form-control">
+							</div>
+							<div class="col-sm-2">
+								<label>Opacity</label>
+								<input type="text" value="" class="colorpicker autoinit form-control" data-opacity="true">
+							</div>
+							<div class="col-sm-2">
+								<label>Hidden</label>
+								<input type="hidden" value="#db913d" class="colorpicker autoinit form-control">
+							</div>
+							<div class="col-sm-4">
+								<label>Inline</label><br>
+								<input type="text" value="" class="colorpicker autoinit form-control" data-inline="true">
+							</div>
+						</div>
+					</div>
+					<script src="https://gist.github.com/zrepas/c060a8eed363027322f6.js"></script>
+
 					<h3>Rangepicker</h3>
 					<h3>Mask</h3>
 					<h3>Messages</h3>
