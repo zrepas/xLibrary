@@ -1,0 +1,15 @@
+<div class="best plugin ever">
+	Én egy teljesen másik template vagyok ám.
+	<hr>
+	Ez meg egy foreach:<br>
+	<div id="comments">
+		{{#each comments}}
+			<h4>{{title}}</h4>
+			<div>{{body}}</div>
+		{{else}}
+			<p class="empty">{{comment}}</p>
+		{{/each}}
+	</div>
+	A változót ide írom. {{ adjective }}.<br>
+	Ez meg ugyanaz az include mint a másiknál: {{> ./test/innertext }}
+</div>

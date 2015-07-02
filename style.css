@@ -1,0 +1,49 @@
+body .settings {
+	padding: 10px;
+	overflow: hidden;
+	font: 12px Helvetica, arial, freesans, clean, sans-serif;
+	color: #999;
+	background-color: #f7f7f7;
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-top-right-radius: 3px;
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-topright: 3px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	border: 1px solid #ddd;
+	border-bottom: 0;
+}
+.settings + .example {
+	border-radius: 0;
+}
+body .example + .gist .gist-file {
+	border-radius: 0;
+	-webkit-border-bottom-right-radius: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	-moz-border-radius-bottomright: 3px;
+	-moz-border-radius-bottomleft: 3px;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+body .example {
+	border: 1px solid #ddd;
+	border-bottom: 0;
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-top-right-radius: 3px;
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-topright: 3px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	padding: 10px;
+}
+body p:last-child {margin-bottom:0;}
+body {position: relative;}
+
+.nav-own li {font-size:11px; margin:0;}
+.nav-own li>a { padding: 5px 15px;}
+.nav-own li.h1 {font-size: 15px;}
+.nav-own li.h2 {font-size:12px; font-weight: bold;}
+.nav-own li.h3 {padding-left: 20px;}
+.nav-own li.h4 {padding-left: 25px;}
+.nav-own li.h5 {}
+.nav-own li.h6 {}

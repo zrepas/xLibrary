@@ -1,0 +1,11 @@
+<div class="best plugin ever">
+	<div id="comments">
+		{{#each hotels}}
+			<h4>{{Name}}</h4>
+			<img src={{Thumbnail}} style="width: 100px;">
+			<div>{{City}}, {{Country}}, {{MinCost}} €</div>
+		{{else}}
+			<p class="empty">Nem jött hotel :(</p>
+		{{/each}}
+	</div>
+</div>
